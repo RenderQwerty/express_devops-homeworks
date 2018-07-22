@@ -18,9 +18,9 @@ tfdir=$(pwd)
 cd "$tfdir"/stage/ || exit
 terraform init -backend=false
 terraform validate -var-file=terraform.tfvars.example
-tflint --error-with-issues -var-file=terraform.tfvars.example
+tflint --error-with-issues --var-file=terraform.tfvars.example
 
 cd "$tfdir"/prod/ || exit
 terraform init -backend=false
 terraform validate -var-file=terraform.tfvars.example
-tflint --error-with-issues -var-file=terraform.tfvars.example
+tflint --error-with-issues --var-file=terraform.tfvars.example
