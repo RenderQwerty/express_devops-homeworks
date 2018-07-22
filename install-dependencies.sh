@@ -14,7 +14,7 @@ do
 done 
 
 
-pip install ansible-lint=3.4.23
+pip install ansible-lint==3.4.23
 wget $packer_url -O /tmp/packer.zip; unzip /tmp/packer -d /usr/sbin/
 wget $terraform_url -O /tmp/terraform.zip; unzip /tmp/terraform.zip -d /usr/sbin/
 wget $tflint_url -O /tmp/tflint.zip; unzip /tmp/tflint.zip -d /usr/sbin/
