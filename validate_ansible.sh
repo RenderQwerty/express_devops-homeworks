@@ -4,4 +4,4 @@
 # Maintainter: Yurii Fisakov, fisakov.root@gmail.com
 
 # Show used checker versions
-anible-lint --version
+ansible-lint --version
