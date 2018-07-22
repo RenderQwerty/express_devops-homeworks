@@ -10,11 +10,11 @@ tflint_url=https://github.com/wata727/tflint/releases/download/v0.7.1/tflint_lin
 
 for dep in "${deps[@]}"
 do
-    apt install "$dep"
+    apt install "$dep" -y
 done 
 
 
-pip install ansible-lint
+pip install ansible-lint=3.4.23
 wget $packer_url -O /tmp/packer.zip; unzip /tmp/packer -d /usr/sbin/
 wget $terraform_url -O /tmp/terraform.zip; unzip /tmp/terraform.zip -d /usr/sbin/
 wget $tflint_url -O /tmp/tflint.zip; unzip /tmp/tflint.zip -d /usr/sbin/
