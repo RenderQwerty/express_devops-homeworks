@@ -5,3 +5,6 @@
 
 # Show used checker versions
 ansible-lint --version
+
+cd ansible/playbooks || exit
+find . -name '*.yml' -exec ansible-lint {} \;
