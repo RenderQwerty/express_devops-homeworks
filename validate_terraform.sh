@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Validate packer templates
+# Description: Validate terraform templates
 # Maintainter: Yurii Fisakov, fisakov.root@gmail.com
 
 cd terraform || exit
