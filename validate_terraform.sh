@@ -7,9 +7,6 @@
 terraform version; tflint --version
 
 # Generate dummy ssh-key for terraform
-
-
-mkdir ~/.ssh
 ssh-keygen -C appuser -t rsa -f ~/.ssh/appuser -P dummy
 
 cd terraform || exit
